@@ -333,3 +333,21 @@ h1 {
  :-ms-input-placeholder {
     color: var(--darkTeal) !important;
 }
+
+#productsSection {
+    margin-top: 20%;
+}
+
+#clocksSection h5 {
+    font-weight: normal;
+    color: var(--darkTeal) !important;
+}
+
+#clocksSection h5:hover {
+    font-weight: bold;
+    color: var(--darkTeal);
+}
+
+#clocksSection a:hover {
+    text-decoration: none;
+}
