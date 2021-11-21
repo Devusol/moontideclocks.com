@@ -351,3 +351,8 @@ h1 {
 #clocksSection a:hover {
     text-decoration: none;
 }
+
+#clocksSection>div>div>h5 {
+    font-weight: bold;
+    color: var(--darkTeal);
+}
