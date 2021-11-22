@@ -1,0 +1,364 @@
+body,
+html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+ :root {
+    --darkTeal: #05666B;
+    --sand: #EEBB69;
+    --blue: #0000FF;
+    --lightTeal: #65B8BF;
+}
+
+@font-face {
+    font-family: chocolateFont;
+    src: url(./fonts/Painting_With_Chocolate.ttf);
+}
+
+.navbar {
+    background: url(./images/desktopNav.svg);
+    height: 320px;
+    z-index: 20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: unset;
+    position: fixed;
+    width: 100%;
+}
+
+.hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#heroSection:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#heroSection {
+    background: url(./images/heroClock.png) top center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed; PARALLAX*/
+}
+
+#heroSectionAbout {
+    background: url(./images/tide-picture.png) top center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed; PARALLAX*/
+}
+
+.heroButtons {
+    width: 100%;
+    padding: 2%;
+}
+
+.navbar-toggler {
+    height: 40px;
+}
+
+#navbarNavAltMarkup {
+    align-items: unset;
+}
+
+.navbar-nav {
+    margin-right: 0px;
+}
+
+.nav-item {
+    height: 50px;
+}
+
+body>header>nav>a>img {
+    padding-left: 40px;
+    padding-top: 20px;
+    height: 10vw;
+}
+
+#navbarNavAltMarkup {
+    padding: 20px;
+}
+
+#navbarNavAltMarkup a {
+    padding: 0 14px;
+}
+
+h4,
+.bi,
+h6 {
+    color: white;
+    font-weight: bold;
+}
+
+h4:hover,
+.bi:hover,
+h6:hover {
+    color: var(--darkTeal);
+    cursor: pointer;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.bi {
+    padding: 0 10px;
+}
+
+path:hover {
+    fill: var(--darkTeal);
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--lightTeal);
+}
+
+section {
+    padding: 80px 80px;
+}
+
+.btn-outline-primary {
+    color: var(--darkTeal);
+    border-color: var(--lightTeal);
+    border-radius: 27px;
+    background-color: rgba(255, 255, 255, 0.77);
+    padding: 2% 20%;
+}
+
+.btn-outline-primary:hover {
+    background: var(--darkTeal);
+    border-color: var(--darkTeal);
+}
+
+.btn-primary {
+    color: var(--darkTeal);
+    font-weight: bolder;
+    border-color: var(--lightTeal);
+    border-radius: 27px;
+    background-color: rgba(101, 184, 191, .77);
+    padding: 2% 20%;
+}
+
+.btn-primary:hover {
+    background: var(--darkTeal);
+    border-color: var(--darkTeal);
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .55);
+    border-color: rgba(0, 0, 0, .1);
+}
+
+@media (min-width:1690px) {
+    .navbar {
+        height: 48%;
+    }
+}
+
+@media (min-width:0px) and (max-width:991px) {
+    #navbarNavAltMarkup>div>div>a:nth-child(1) {
+        display: none;
+    }
+    #navbarNavAltMarkup>div>div>a:nth-child(2) {
+        display: none;
+    }
+    #navbarNavAltMarkup>div>div>a:nth-child(3) {
+        display: none;
+    }
+    #navbarNavAltMarkup {
+        width: unset;
+    }
+    #navbarNavAltMarkup .row {
+        flex-wrap: nowrap;
+    }
+    body>header>nav>a>img {
+        height: 14vw;
+    }
+    .navbar {
+        height: 200px;
+    }
+}
+
+@media (min-width:0px) and (max-width:578px) {
+    body>header>nav>a>img {
+        height: 20vw;
+    }
+    #navbarNavAltMarkup a {
+        padding: 0px 0px;
+    }
+}
+
+@media (min-width:0px) and (max-width:399px) {
+    #navbarNavAltMarkup .row {
+        flex-wrap: nowrap;
+        top: 10%;
+    }
+    #navbarNavAltMarkup {
+        flex-wrap: nowrap;
+        top: 52%;
+    }
+    body>header>nav>a>img {
+        height: 20vw;
+    }
+    #navbarNavAltMarkup {
+        left: 35%;
+    }
+}
+
+#navbarNavAltMarkup {
+    position: absolute;
+    right: 0;
+}
+
+.borderLine {
+    color: black;
+    border-bottom: 100px;
+}
+
+hr {
+    height: 25px;
+    margin: 0px;
+    border: 0px;
+    background: var(--lightTeal);
+}
+
+h1 {
+    font-family: chocolateFont;
+    color: var(--darkTeal);
+}
+
+#aboutText h1 {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 3000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(238, 187, 105);
+    /* Fallback color */
+    background-color: rgba(238, 187, 105, 0.5);
+    /* Black w/ opacity */
+    backdrop-filter: blur(60px);
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    margin: 6% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+    background: none;
+    border: none;
+}
+
+.modal-content h1 {
+    text-align: center;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: var(--blue);
+    float: right;
+    font-size: 37px;
+    font-weight: bold;
+    opacity: 1;
+    text-align: end;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--darkTeal);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-control {
+    border: 1px solid var(--darkTeal);
+    color: var(--darkTeal);
+}
+
+::placeholder {
+    color: var(--darkTeal) !important;
+}
+
+ ::-webkit-input-placeholder {
+    color: var(--darkTeal) !important;
+}
+
+ :-ms-input-placeholder {
+    color: var(--darkTeal) !important;
+}
+
+#productsSection {
+    margin-top: 20%;
+}
+
+#clocksSection h5 {
+    font-weight: normal;
+    color: var(--darkTeal) !important;
+}
+
+#clocksSection h5:hover {
+    font-weight: bold;
+    color: var(--darkTeal);
+}
+
+#clocksSection a:hover {
+    text-decoration: none;
+}
+
+#clocksSection>div>div>h5 {
+    font-weight: bold;
+    color: var(--darkTeal);
+}
